@@ -1,5 +1,9 @@
 # BLACKAJACK
 [Toy] C++로 구현한 블랙잭 게임
+## index
+
+- [Person 구조체](##Person)
+- [사용한 상수](##Const)
 
 ## Person
 - 블랙잭에 참여한 사람
