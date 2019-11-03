@@ -27,4 +27,11 @@ typedef struct Person {
 	string cardLine6 = "";
 	string cardLine7 = "";
 } PERSON_DATA;
+
+const int CARD = 13; // 1~10, J, Q, K
+const int KIND = 4; // ◆, ♥, ♠, ♣
+const int PLAY = 6;
+extern bool totCard[CARD * KIND]; // 전체 카드뭉치
+extern PERSON_DATA dealer;
+extern PERSON_DATA player[PLAY * 4];
 #endif
