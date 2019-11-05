@@ -32,4 +32,24 @@
 - player : 플레이어들의 카드 및 점수를 가지는 구조체 배열
 
 ## Print
-- 
+1. 기본 Print 구성
+- MakePrint() : 뽑은 카드를 출력하는 함수  
+ex) ♠7 카드를 뽑았을 때 다음과 같이 출력된다.  
+┌───  
+│ ♠  
+│  7  
+│    
+└───  
+
+2. NormalPrint.h
+- NormalEnd(int i) : 더블 다운이 아닐 때에 카드의 마지막 부분을 처리해주는 함수
+- NormalPrint(Person& person) : 더블 다운이 아닌 플레이어의 패를 출력해주는 함수
+
+3. DoubleDownPrint.h
+- DoubleDownEnd(Person& person int i) : 더블 다운일 때에 마지막 카드를 처리해주는 함수
+- DoubleDownPrint(Person& person) : 더블 다운인 플레이어의 패를 출력해주는 함수
+
+4. FinallyPrint.h
+- PrintDealer(Person& person) : 딜러의 패를 출력하는 함수
+- PrintPlayer(int i) : i번 째 플레이어의 패를 출력하는 함수
+- Print() : PrintDealer, PrintPlayer 함수를 합쳐 딜러와 모든 플레이어의 패를 출력하는 함수
