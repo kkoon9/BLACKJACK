@@ -7,6 +7,7 @@
 - [Print 부분](##Print)
 - [Data 부분](##Data)
 - [Dealer 부분](##Dealer)
+- [Rule 부분](##Rule)
 
 ## Person
 - 블랙잭에 참여한 사람
@@ -68,3 +69,10 @@ ex) ♠7 카드를 뽑았을 때 다음과 같이 출력된다.
 ## Dealer
 - DealerHidden() : 딜러의 cardSum이 21이면 참을 출력하는 함수
 - DealerInit : 딜러의 홀 카드까지 보이게 출력하게 만들어주는 함수
+
+## Rule
+- 블랙잭에서의 게임 규칙을 구현한 함수
+- insurance() : 인슈어런스 및 이븐머니 여부를 플레이어에게 묻는 함수
+- Split(int group) : Split을 진행해주는 함수
+- HitandStay(Person& person) : Hit하여 카드를 뽑는 함수
+- GetScore(Person& person, int num) : 카드를 뽑은 뒤 카드 총합을 계산해주는 함수
