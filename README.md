@@ -6,6 +6,7 @@
 - [사용한 상수](##Const)
 - [Print 부분](##Print)
 - [Data 부분](##Data)
+- [Dealer 부분](##Dealer)
 
 ## Person
 - 블랙잭에 참여한 사람
@@ -63,3 +64,7 @@ ex) ♠7 카드를 뽑았을 때 다음과 같이 출력된다.
 3. Ask(Person& person) : person의 mode값을 입력받는 함수
 4. IsBlackJack(Person& person) : person의 두 카드의 합을 계산하여 블랙잭 체크하는 함수
 5. IsBust(Person& person) : person의 cardSum을 계산하여 버스트 체크하는 함수
+
+## Dealer
+- DealerHidden() : 딜러의 cardSum이 21이면 참을 출력하는 함수
+- DealerInit : 딜러의 홀 카드까지 보이게 출력하게 만들어주는 함수
