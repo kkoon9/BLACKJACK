@@ -5,6 +5,8 @@
 - [Person 구조체](##Person)
 - [사용한 상수](##Const)
 - [Print 부분](##Print)
+- [Data 부분](##Data)
+
 ## Person
 - 블랙잭에 참여한 사람
 - 딜러 및 플레이어들의 정보를 가지는 구조체가 선언된 헤더파일
@@ -53,3 +55,11 @@ ex) ♠7 카드를 뽑았을 때 다음과 같이 출력된다.
 - PrintDealer(Person& person) : 딜러의 패를 출력하는 함수
 - PrintPlayer(int i) : i번 째 플레이어의 패를 출력하는 함수
 - Print() : PrintDealer, PrintPlayer 함수를 합쳐 딜러와 모든 플레이어의 패를 출력하는 함수
+
+## Data
+- 구조체 Person 타입의 변수들의 값을 변경해주는 함수로 구성되어 있다.
+1. CardKind(int i) : i의 값에 따라 ◆(0), ♥(1), ♠(2), ♣(3) 리턴해주는 함수
+2. PrintCardNum(int num) : 카드 숫자(num)에 따라 문자열로 리턴해주는 함수
+3. Ask(Person& person) : person의 mode값을 입력받는 함수
+4. IsBlackJack(Person& person) : person의 두 카드의 합을 계산하여 블랙잭 체크하는 함수
+5. IsBust(Person& person) : person의 cardSum을 계산하여 버스트 체크하는 함수
