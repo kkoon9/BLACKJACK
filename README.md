@@ -8,6 +8,7 @@
 - [Data 부분](##Data)
 - [Dealer 부분](##Dealer)
 - [Rule 부분](##Rule)
+- [Casino 부분](##Casino)
 
 ## Person
 - 블랙잭에 참여한 사람
@@ -76,3 +77,7 @@ ex) ♠7 카드를 뽑았을 때 다음과 같이 출력된다.
 - Split(int group) : Split을 진행해주는 함수
 - HitandStay(Person& person) : Hit하여 카드를 뽑는 함수
 - GetScore(Person& person, int num) : 카드를 뽑은 뒤 카드 총합을 계산해주는 함수
+
+## Casino
+- Initial() : 블랙잭의 처음 부분을 수행해주는 함수
+
